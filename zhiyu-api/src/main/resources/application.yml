@@ -1,0 +1,17 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /api
+spring:
+  profiles:
+    active: @environment@
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 100MB
+  web:
+    resources:
+      static-locations: classpath:/static/,classpath:/templates/
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
