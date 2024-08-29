@@ -3,8 +3,8 @@ server:
   servlet:
     context-path: /api
 spring:
-  profiles:
-    active: @environment@
+#  profiles:
+#    active: @environment@
   servlet:
     multipart:
       max-request-size: 100MB
